@@ -14,11 +14,11 @@ class MoviesTest < ApplicationSystemTestCase
     visit movies_url
     click_on "New Movie"
 
-    fill_in "Director Id", with: @movie.director_id_id
+    fill_in "Director", with: @movie.director_id
     fill_in "Genre", with: @movie.genre
     fill_in "Oscar", with: @movie.oscar
     fill_in "Title", with: @movie.title
-    fill_in "User Id", with: @movie.user_id_id
+    fill_in "User", with: @movie.user_id
     fill_in "Year", with: @movie.year
     click_on "Create Movie"
 
@@ -30,11 +30,11 @@ class MoviesTest < ApplicationSystemTestCase
     visit movies_url
     click_on "Edit", match: :first
 
-    fill_in "Director Id", with: @movie.director_id_id
+    fill_in "Director", with: @movie.director_id
     fill_in "Genre", with: @movie.genre
     fill_in "Oscar", with: @movie.oscar
     fill_in "Title", with: @movie.title
-    fill_in "User Id", with: @movie.user_id_id
+    fill_in "User", with: @movie.user_id
     fill_in "Year", with: @movie.year
     click_on "Update Movie"
 

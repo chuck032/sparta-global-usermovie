@@ -5,13 +5,13 @@ one:
   genre: MyString
   year: 1
   oscar: false
-  director_id: one
-  user_id: one
+  director: one
+  user: one
 
 two:
   title: MyString
   genre: MyString
   year: 1
   oscar: false
-  director_id: two
-  user_id: two
+  director: two
+  user: two

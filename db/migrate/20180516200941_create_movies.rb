@@ -5,8 +5,8 @@ class CreateMovies < ActiveRecord::Migration[5.2]
       t.string :genre
       t.integer :year
       t.boolean :oscar
-      t.references :director_id, foreign_key: true
-      t.references :user_id, foreign_key: true
+      t.references :director, foreign_key: true
+      t.references :user, foreign_key: true
 
       t.timestamps
     end
