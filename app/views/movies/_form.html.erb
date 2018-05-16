@@ -33,12 +33,12 @@
 
   <div class="field">
     <%= form.label :director_id %>
-    <%= form.text_field :director_id %>
+    <%= collection_select(:movie, :director_id, Director.all, :id, :name)%>
   </div>
 
   <div class="field">
     <%= form.label :user_id %>
-    <%= form.text_field :user_id %>
+    <%= collection_select(:movie, :user_id, User.all, :id, :firstname)%>
   </div>
 
   <div class="actions">

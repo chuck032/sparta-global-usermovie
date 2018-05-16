@@ -22,12 +22,12 @@
 
 <p>
   <strong>Director:</strong>
-  <%= @movie.director %>
+  <%= @movie.director.name %>
 </p>
 
 <p>
   <strong>User:</strong>
-  <%= @movie.user %>
+  <%= @movie.user.firstname%>
 </p>
 
 <%= link_to 'Edit', edit_movie_path(@movie) %> |
