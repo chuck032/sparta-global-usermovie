@@ -1,24 +1,3 @@
-# README
+# Sparta global User Movie Director Relationship
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
-
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+For this project I created a rails project with three resources (Users, Directors, Movies). I created all three of these resources using the generate scaffold command. Once these are created I than append the models to include has_many and :through commands. I also included at least 3 different attributes for each resource. And finally I added 3 validates for each model.
